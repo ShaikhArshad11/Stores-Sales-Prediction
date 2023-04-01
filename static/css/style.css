@@ -1,0 +1,43 @@
+body {
+    background-image: url("download.jpg");
+    background-size: cover;
+    color: white;
+    size: 70px;
+}
+
+form {
+    text-align: center;
+    size: 30px;
+}
+
+input {
+    width: 60%;
+}
+
+input[type='submit'] {
+    background-color: green;
+    color: white;
+    width: 15%;
+    size: 20px;
+}
+
+select {
+    width: 60%;
+}
+
+label{
+    font-size: 15px;
+    display: inline-block;
+    width: 100px;
+    text-align: right;
+}
+
+select:required:invalid {
+    color: gray;
+  }
+  option[value=""][disabled] {
+    display: none;
+  }
+  option {
+    color: black;
+  }

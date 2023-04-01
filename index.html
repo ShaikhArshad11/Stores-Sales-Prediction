@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+  <html lang="en" dir="ltr">
+    <head>
+      <title>Stores Sales Prediction</title>
+      <meta charset="utf-8">
+      <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/Style.css')}}">
+      <link rel="icon" href="/static/css/icon.jpg">
+      <link rel="stylesheet" type="text/css" href="/static/css/style.css">
+
+    </head>
+
+    <body>
+
+      <h1>
+        <div style ="text-align:center">
+          <font color='White'>
+            Stores Sales Prediction
+          </font>
+        </div>
+      </h1>
+
+
+             <form class="" action="/predict" method="post">
+
+	        <div class="form-group">
+            <input placeholder="Item Weight" type="text" name="Item_Weight" class="form-control" required>
+            </div>
+            <br>
+
+               <div class="form-group">
+                 <select class="form-control" name="Item_Fat_Content" required="required">
+                  <option value="" disabled selected>Item Fat Content</option> 
+                  <option value="0">Low Fat</option>
+                   <option value="1">Regular</option>
+                 </select>
+               </div>
+               <br>
+		   
+               <div class="form-group">
+                 <input placeholder="Item Visibility" type="text" name="Item_Visibility" id="Item_Visibility" class="form-control" required>
+               </div>
+               <br>
+
+
+               <div class="form-group">
+                 <select class="form-control chosenn" name="Item_Type" required="required">
+               </div>
+               <option value="" disabled selected>Item Type</option>
+                   <option value="0">Baking Goods</option>
+                   <option value="1">Breads</option>
+                   <option value="2">Breakfast</option>
+                   <option value="3">Canned</option>
+		               <option value="4">Dairy</option>
+                   <option value="5">Frozen Foods</option>
+                   <option value="6">Fruits and Vegetables</option>
+                   <option value="7">Hard Drinks</option>
+		               <option value="8">Health and Hygiene</option>
+                   <option value="9">Household</option>
+                   <option value="10">Meat</option>
+                   <option value="11">Others</option>
+		               <option value="12">Seafood</option>
+                   <option value="13">Snack Foods</option>
+                   <option value="14">Soft Drinks</option>
+                   <option value="15">Starchy Foods</option>
+                 </select>
+                 </select>
+               </div>
+               <br>
+
+
+
+               <div class="form-group">
+                 <input placeholder="Item MRP" type="text" name="Item_MRP" id="Item_MRP class="form-control" required>
+               </div>
+               <br>
+
+              <div class="form-group">
+                 <select class="form-control chosenn" name="Outlet_Location_Type" required="required">
+                  <option value="" disabled selected>Outlet Location Type</option> 
+                  <option value="0">Tier 1</option>
+                   <option value="1">Tier 2</option>
+                   <option value="2">Tier 3</option>
+                 </select>
+               </div>
+               <br>
+
+
+               <div class="form-group">
+                <select class="form-control chosenn" name="Outlet_Size" required="required">
+                 <option value="" disabled selected>Outlet Size</option> 
+                 <option value="0">Small</option>
+                  <option value="1">Medium</option>
+                  <option value="2">High</option>
+                </select>
+              </div>
+              <br>
+
+               <div class="form-group">
+                 <select class="form-control chosenn" name="Outlet_Type_Supermarket_Type1" required="required">
+                  <option value="" disabled selected>Outlet_Type_Supermarket Type1</option> 
+                   <option value="0">No</option>
+                   <option value="1">Yes</option>
+                 </select>
+               </div>
+               <br>
+
+               <div class="form-group">
+                <select class="form-control chosenn" name="Outlet_Type_Supermarket_Type2" required="required">
+                 <option value="" disabled selected>Outlet_Type_Supermarket Type2</option> 
+                  <option value="0">No</option>
+                  <option value="1">Yes</option>
+                </select>
+              </div>
+              <br>
+
+              <div class="form-group">
+                <select class="form-control chosenn" name="Outlet_Type_Supermarket_Type3" required="required">
+                 <option value="" disabled selected>Outlet_Type_Supermarket Type3</option> 
+                  <option value="0">No</option>
+                  <option value="1">Yes</option>
+                </select>
+              </div>
+              <br>
+
+
+             <div class="form-group">
+               <input type="submit" class="btn btn-primary" value="Predict">
+               </div>
+               </form>
+               </div>
+               </div>
+               </div>
+               </div>
+               <br>
+
+               <form action="{{ url_for('predict_all')}}"method="post">
+                <h1>For Bulk Prediction</h1>
+
+                <input type="text" name="Db_name=StoresSalesPrediction" placeholder="Db_name=StoresSalesPrediction" required="required" /><br>
+                <br>
+                
+                <input type="text" name="collection_name=Test" placeholder="collection_name=Test" required="required" /><br>
+                <br>
+                <input type="submit" class="btn btn-primary" value="Predict_All">
+                <br>
+    
+    
+                <br><br>
+    <center>{{ prediction_text }}</center>
+    <center> {{ prediction }}</center>
+    </body>
+
+
+  </html>
