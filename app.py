@@ -1,4 +1,4 @@
-from flask import Flask , request, render_template, jsonify
+from flask import Flask , request, render_template
 import pickle
 import numpy as np
 from mongodb import db_ops
