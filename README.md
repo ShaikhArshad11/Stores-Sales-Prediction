@@ -77,6 +77,16 @@ git push origin main
 git remote -v
 ```
 ---
-
+# **For Deployment on Railway**
+---
+[Railway Link](https://railway.app/)
+---
+## Things to add in requirements.txt file 
+1. click
+2. gunicorn
+3. itsdangerous
+4. Jinja2
+5. MarkupSafe
+6. Werkzeug
 
 

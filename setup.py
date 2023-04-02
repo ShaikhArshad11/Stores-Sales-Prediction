@@ -4,7 +4,7 @@ from typing import List
 #Declaring variables for setup functions
 PROJECT_NAME='sales-predictor'
 AUTHOR='Arshad Shaikh'
-VERSION='0.0.1'
+VERSION='0.0.5'
 DESCRIPTION='Stores Sales Prediction'
 PACKAGES=['src']
 REQUIREMENT_FILE_NAME='requirements.txt'
