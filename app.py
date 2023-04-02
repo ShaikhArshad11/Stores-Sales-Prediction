@@ -65,9 +65,10 @@ def predict_all():
             #Test transformation
             X=df[[x for x in df.columns if x != 'Classes']]
             print(X)
-            my_prediction=model.predict(X.values)**3
-            my_prediction=my_prediction.tolist()
-            return render_template('index.html',prediction = my_prediction)
+            my_prediction=model.predict(X.values)
+            output = my_prediction**3
+            output=output.tolist()
+            return render_template('index.html',prediction = output)
         
     except Exception as e:
             raise CustomException(e,sys) from e
