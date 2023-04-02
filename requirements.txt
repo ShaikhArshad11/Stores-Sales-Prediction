@@ -4,3 +4,5 @@ numpy
 pymongo
 seaborn
 matplotlib
+pymongo
+-e .
