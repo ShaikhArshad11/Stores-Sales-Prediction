@@ -11,12 +11,23 @@ Nowadays, shopping malls and Big Marts keep track of individual item sales data 
 
 ## [Dataset Link](https://www.kaggle.com/datasets/brijbhushannanda1979/bigmart-sales-data)
 ---
-
-
+# Tech Stack Used
+ ## VS Code is used as IDE. • Python Flask as backend. 
+ ## • HTML and CSS for frontend. • MongoDB as database for insertion and retrieval of records. 
+ ## • GitHub is used as version control system. 
+ ## • Random Forest Regressor is used for model building. 
+ ## • GridSearchCv is used for hyperparameter tuning.
+ ## • AWS (Amazon Web Services is used for deployment). 
+---
 ## Software and account Requirement.
 ## 1. [Github Account](https://github.com/)
 ## 2. [VS CODE](https://code.visualstudio.com/download)
 ## 3. [Git cli](https://git-scm.com/downloads)
+---
+# Steps to run on your local machine
+```python
+Install Python Go inside the StoreSalesPrediction folder Run on cmd - python app.py
+```
 ---
 ## Creating Conda Enviornment
 ```python
