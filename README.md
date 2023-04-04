@@ -19,6 +19,14 @@ Nowadays, shopping malls and Big Marts keep track of individual item sales data 
  ## • GridSearchCv is used for hyperparameter tuning.
  ## • AWS (Amazon Web Services is used for deployment). 
 ---
+# Important Documents
+## HLD : https://github.com/ShaikhArshad11/Stores-Sales-Prediction/blob/main/Documents/HLD.docx
+## LLD : https://github.com/ShaikhArshad11/Stores-Sales-Prediction/blob/main/Documents/LLD.docx
+## Software architecture : https://github.com/ShaikhArshad11/Stores-Sales-Prediction/blob/main/Documents/Software%20Architecture%20Document.docx
+## WireFrame : https://github.com/ShaikhArshad11/Stores-Sales-Prediction/blob/main/Documents/wireframe.docx
+## Detailed Project Report : https://github.com/ShaikhArshad11/Stores-Sales-Prediction/blob/main/Documents/Detailed%20Report.pptx
+
+---
 ## Software and account Requirement.
 ## 1. [Github Account](https://github.com/)
 ## 2. [VS CODE](https://code.visualstudio.com/download)
