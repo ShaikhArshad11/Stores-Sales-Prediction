@@ -1,3 +1,4 @@
+
 from flask import Flask , request, render_template
 import pickle
 import numpy as np
@@ -74,5 +75,4 @@ def predict_all():
             raise CustomException(e,sys) from e
 
 if __name__ == "__main__":
-    app.run(debug=True)
-
+    app.run()
