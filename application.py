@@ -1,4 +1,3 @@
-
 from flask import Flask , request, render_template
 import pickle
 import numpy as np
@@ -7,7 +6,8 @@ from src.logger import logging
 from src.exception import CustomException
 import sys
 
-app =Flask(__name__)
+application =Flask(__name__)
+app = application
 model = pickle.load(open('model.pkl', 'rb'))
 
 @app.route('/')
